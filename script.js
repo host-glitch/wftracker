@@ -8,7 +8,7 @@ console.log('Before fetch');
 // list of allowed categories
 const allowedCategories = ['Warframes', 'Melee', 'Primary', 'Secondary', 'Pets', 'Arch-Gun', 'Arch-Melee', 'Archwing', 'Sentinels', 'SentinelWeapons'];
 
-fetch('http://localhost:3000/api/items')
+fetch('/api/items')
   .then(response => response.json())
   .then(items => {
     console.log('Items:', items);
