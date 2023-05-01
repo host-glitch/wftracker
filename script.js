@@ -8,7 +8,7 @@ console.log('Before fetch');
 // list of allowed categories
 const allowedCategories = ['Warframes', 'Melee', 'Primary', 'Secondary', 'Pets', 'Arch-Gun', 'Arch-Melee', 'Archwing', 'Sentinels', 'SentinelWeapons'];
 
-fetch('https://host-glitch.github.io/wftracker/api/items')
+fetch('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/All.json')
   .then(response => response.json())
   .then(items => {
     console.log('Items:', items);
