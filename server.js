@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/api/items', async (req, res) => {
+app.get('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/All.json', async (req, res) => {
   try {
    const response = await axios.get('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/All.json');
      console.log(response.data); // Add this line to log the response data
