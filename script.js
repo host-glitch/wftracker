@@ -54,7 +54,7 @@ fetch('https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json/Al
         itemsContainer.innerHTML = itemsHTML;
         
         // update total items count
-        totalItems.textContent = `Total Items: ${filteredItems.length}`;
+        totalItems.textContent = `${filteredItems.length}`;
       });
     });
 
